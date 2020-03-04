@@ -177,8 +177,8 @@ int main(int argc, char** argv)
 				animate(&buf);
 				draw_box(&buf);
 				draw_labels(&buf);
-				draw_f_commands();
-				draw_lock_state(&buf);
+				// draw_f_commands();
+				// draw_lock_state(&buf);
 				position_input(&buf, &desktop, &login, &password);
 				draw_desktop(&desktop);
 				draw_input(&login);
@@ -205,6 +205,7 @@ int main(int argc, char** argv)
 		{
 			switch (event.key)
 			{
+			/*
 			case TB_KEY_F1:
 				shutdown = true;
 				run = false;
@@ -213,6 +214,7 @@ int main(int argc, char** argv)
 				reboot = true;
 				run = false;
 				break;
+			*/
 			case TB_KEY_CTRL_C:
 				run = false;
 				break;
